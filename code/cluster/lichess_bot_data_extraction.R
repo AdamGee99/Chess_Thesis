@@ -23,7 +23,7 @@ bot_usernames = c("IA_Horus", "LeelaMultiPoss", "TheMatrix2029", "que-encrypt", 
                   "PatriciaBot", "Mr-Chess-Berserk", "ElPeonElectrico", "KunkkaBot", "duchessAI")
 
 #extract games
-bot_games = chessR::get_raw_lichess("chessguy1515")
+bot_games = chessR::get_raw_lichess(bot_usernames)
 
 #remove moves column, we don't need it and it takes up so much space
 bot_games = bot_games %>% select(-Moves)
