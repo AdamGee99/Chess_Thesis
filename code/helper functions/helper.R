@@ -21,7 +21,7 @@ read_player <- function(path, file){
 #for getting history of players
 get_hist <- function(user, games, prev_n) {
   #list of vars to potentially be kept
-  vars = c("Username", "Date", "Time", "Round", "White", "Black", "Result", "WhiteElo", "BlackElo", 
+  vars = c("Username", "Date", "Time", "UTCDate", "UTCTime", "Round", "White", "Black", "Result", "WhiteElo", "BlackElo", 
            "focal_white", "focal_result", "focal_win_prop")
   
   if(prev_n == 1){
