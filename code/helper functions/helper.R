@@ -4,7 +4,7 @@
 
 #for reading in games from a given player
 read_player <- function(path, file){
-  dat <- read_csv(file = paste0(path, file),
+  dat <- read_csv(file = paste0(path, "/", file),
                   col_types = cols(UTCDate = col_date("%Y.%m.%d"),
                                    WhiteTitle = col_character(),
                                    BlackTitle = col_character(),
