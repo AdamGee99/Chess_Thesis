@@ -1,2 +1,0 @@
-# Chess_Thesis
-test 
